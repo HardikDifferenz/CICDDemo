@@ -1,4 +1,4 @@
-package com.cicddemo.myapplication
+package com.cicddemo.app
 
 import org.junit.Test
 
