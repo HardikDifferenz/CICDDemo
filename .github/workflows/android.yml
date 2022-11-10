@@ -26,7 +26,11 @@ jobs:
         with:
           name: artifact
           path: android/app/build/outputs/apk/release/app-release.apk
-          
+      - name: Get apk path
+        id: apk-path
+        run: |
+          path=$(find **/build/outputs/apk -name '*.apk' -type f | head -1)
+          echo "::set-output name=path::$path"
   upload-android:
     needs: build-android
     runs-on: ubuntu-latest
