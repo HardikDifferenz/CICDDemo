@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build Android Release
         run: |
-          cd android && ./gradlew clean && ./gradlew assembleRelease
+          cd  ./gradlew clean && ./gradlew assembleRelease
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
