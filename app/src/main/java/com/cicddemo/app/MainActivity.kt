@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun signIn() {
-        //Google Login Reference link fgfgf
+        //Google Login Reference link fgfgf fdgf
         //https://developers.google.com/identity/sign-in/android/start-integrating
         val signInIntent = mGoogleSignInClient!!.signInIntent
         resultLauncher.launch(signInIntent)
