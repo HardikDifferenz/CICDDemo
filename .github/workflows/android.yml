@@ -32,3 +32,4 @@ jobs:
         token: ${{secrets.FIREBASE_TOKEN}}
         groups: rorty-android-test
         file: app/build/outputs/apk/release/app-release.apk
+        comment:
