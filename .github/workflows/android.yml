@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: artifact
-          path: /app/release/app-release.apk
+          path: /CICDDemo/CICDDemo/app/release/app-release.apk
           
   upload-android:
     needs: build-android
