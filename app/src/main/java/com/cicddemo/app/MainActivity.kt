@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.*
 import com.google.android.gms.tasks.Task
 
-
 class MainActivity : AppCompatActivity() {
     private var mGoogleSignInClient: GoogleSignInClient? = null
 
@@ -26,9 +25,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.btnLogin).setOnClickListener {
             signIn()
         }
-//  dlskdflksdl dsfsdfsdf dsdfsd gdfdfgdfgdfgsdsdfsdfdsfsdf fdsf
+        //References
         //https://medium.com/firebase-developers/quickly-distribute-app-with-firebase-app-distribution-using-github-actions-fastlane-c7d8eca18ee0
+        //https://www.kodeco.com/19407406-continuous-delivery-for-android-using-github-actions#toc-anchor-020
     }
+
 
     private fun signIn() {
         //Google Login Reference link fgfgf fdgf
