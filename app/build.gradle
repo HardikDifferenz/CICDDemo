@@ -33,10 +33,10 @@ android {
         }
 
         release {
-            storeFile file("/Users/differenz42/Desktop/Training/CICDemo/app/keys/cicdemo.jks")
-            storePassword "cicdemo"
-            keyPassword "cicdemo"
-            keyAlias "key0"
+            storeFile file('../app/keys/cicdemo.jks')
+            storePassword 'cicdemo'
+            keyPassword 'cicdemo'
+            keyAlias 'key0'
         }
     }
 
