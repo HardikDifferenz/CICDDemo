@@ -30,7 +30,7 @@ jobs:
       with:
         appId: ${{secrets.FIREBASE_APP_ID_ANDROID}}
         token: ${{secrets.FIREBASE_TOKEN}}
-        groups: rorty-android-test
+        groups: hardikr.differenzsystem@gmail.com
         releaseNotesFile: fastlane/relasenotes.txt
         #releaseNotes: #here we can set release note.
         file: app/build/outputs/apk/release/app-release.apk
