@@ -3,7 +3,7 @@ name: Deploy to Play Store
 on:
   push:
     branches:
-      - mainv
+      - master
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: release.apk
-          path: ${{steps.sign_app.outputs.signedReleaseFile}}
+          path: app/build/outputs/apk/release/app-release.apk
       - uses: actions/upload-artifact@master
         with:
           name: mapping.txt
@@ -49,7 +49,7 @@ jobs:
         with:
           serviceAccountJsonPlainText: ${{ secrets.SERVICE_ACCOUNT_JSON }}
           # 3
-          packageName: com.raywenderlich.android.rwquotes
+          packageName: com.cicddemo.app
           releaseFile: app-release-unsigned-signed.apk
           track: internal
           userFraction: 0.50
