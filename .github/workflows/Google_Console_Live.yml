@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Generate Release APK
-        run: ./gradlew assembleRelease
+#      - name: Generate Release APK
+#        run: ./gradlew assembleRelease
       - name: Sign APK
         uses: r0adkll/sign-android-release@v1
         # ID used to access action output
@@ -39,7 +39,7 @@ jobs:
       # 1
       - uses: actions/download-artifact@master
         with:
-          name: release.apk
+          name: app-release.apk
       - uses: actions/download-artifact@master
         with:
           name: mapping.txt
