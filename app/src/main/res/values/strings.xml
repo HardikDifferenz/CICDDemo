@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="delete_feed_msg">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="delete_feed">Delete Message</string>
+
+
+    <string name="payment_settings">Payment Settings</string>
+    <string name="logout">Logout</string>
+    <string name="footer_content">Diff demo</string>
+    <string name="username_email">Username/ Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="_19_extended">19 extended</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="content_desc">Logo Google IO 2019 Extended</string>
+    <string name="click_animate_text">Click on the <b> Logo</b> to Animate</string>
 </resources>
