@@ -10,3 +10,5 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+//Github token key
+//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

@@ -25,7 +25,7 @@ class LoginValidateUtilTest {
 
     @Test
      fun validateMobileNo() {
-        val emailTest = ValidationUtil.validateMobileNo("123456789012")
+        val emailTest = ValidationUtil.validateMobileNo("1267012")
         Truth.assertThat(emailTest).isFalse()
     }
 
