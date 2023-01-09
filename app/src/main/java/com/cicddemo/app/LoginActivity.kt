@@ -1,24 +1,23 @@
 package com.cicddemo.app
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import android.view.animation.Animation
 import com.cicddemo.app.databinding.ActivityLoginBinding
 
 class LoginActivity : BaseActivity() {
 
     private lateinit var binding: ActivityLoginBinding
 
-    lateinit var idEdtUserName :EditText
-    lateinit var idEdtPassword :EditText
-    lateinit var idBtnLogin :  Button
+    private lateinit var blinkanim: Animation
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         binding.idBtnLogin.setOnClickListener {
 
         }
-
     }
 }

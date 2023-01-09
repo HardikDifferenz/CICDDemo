@@ -1,4 +1,4 @@
-package com.cicddemo.app
+package com.cicddemo.app.utils
 
 import android.app.Dialog
 import android.content.Context
@@ -8,7 +8,7 @@ import android.view.View
 import android.view.Window
 import android.widget.TextView
 import android.widget.Toast
-
+import com.cicddemo.app.R
 
 fun Context.showDialog(
     title: String,
