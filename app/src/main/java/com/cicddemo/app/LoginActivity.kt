@@ -17,7 +17,7 @@ class LoginActivity : BaseActivity() {
         setContentView(binding.root)
 
         binding.idBtnLogin.setOnClickListener {
-
+// ds
         }
     }
     //Github token key
