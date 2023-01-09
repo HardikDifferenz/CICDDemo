@@ -25,8 +25,8 @@ jobs:
           keyPassword: ${{ secrets.KEY_PASSWORD }} #cicidemo
       - uses: actions/upload-artifact@master
         with:
-          name: app-release.apk
-          path: app/build/outputs/apk/release/app-release.apk
+          name: app-release.aab
+          path: app/build/outputs/apk/release/app-release.aab
       - uses: actions/upload-artifact@master
         with:
           name: mapping.txt
@@ -40,7 +40,7 @@ jobs:
       # 1
       - uses: actions/download-artifact@master
         with:
-          name: app-release.apk
+          name: app-release.aab
       - uses: actions/download-artifact@master
         with:
           name: mapping.txt
@@ -51,7 +51,7 @@ jobs:
           serviceAccountJsonPlainText: ${{ secrets.SERVICE_ACCOUNT_JSON }}
           # 3
           packageName: com.cicddemo.app
-          releaseFiles: app-release.apk
+          releaseFiles: app-release.aab
           track: production
           userFraction: 0.50
           mappingFile: mapping.txt
