@@ -7,30 +7,30 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Generate Release APK
-        run: ./gradlew assembleRelease
-      - name: Sign APK
-        uses: r0adkll/sign-android-release@v1
-        # ID used to access action output
-        id: sign_app
-        with:
-          releaseDirectory: app/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY }} #Qzhdc07WOQXgxz27pyaLMImWFpw=
-          alias: ${{ secrets.ALIAS }} #key0
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }} #cicidemo
-          keyPassword: ${{ secrets.KEY_PASSWORD }} #cicidemo
-      - uses: actions/upload-artifact@master
-        with:
-          name: app-release.apk
-          path: app/build/outputs/apk/release/app-release.apk
-      - uses: actions/upload-artifact@master
-        with:
-          name: mapping.txt
-          path: app/build/outputs/mapping/release/mapping.txt
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v2
+#      - name: Generate Release APK
+#        run: ./gradlew assembleRelease
+#      - name: Sign APK
+#        uses: r0adkll/sign-android-release@v1
+#        # ID used to access action output
+#        id: sign_app
+#        with:
+#          releaseDirectory: app/build/outputs/apk/release
+#          signingKeyBase64: ${{ secrets.SIGNING_KEY }} #Qzhdc07WOQXgxz27pyaLMImWFpw=
+#          alias: ${{ secrets.ALIAS }} #key0
+#          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }} #cicidemo
+#          keyPassword: ${{ secrets.KEY_PASSWORD }} #cicidemo
+#      - uses: actions/upload-artifact@master
+#        with:
+#          name: app-release.apk
+#          path: app/build/outputs/apk/release/app-release.apk
+#      - uses: actions/upload-artifact@master
+#        with:
+#          name: mapping.txt
+#          path: app/build/outputs/mapping/release/mapping.txt
 
     deploy-play-store:
       needs: [ build ]
