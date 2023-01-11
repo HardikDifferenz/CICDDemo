@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "269966259407",
-    "firebase_url": "https://cicd-demo-ff985-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "cicd-demo-ff985",
-    "storage_bucket": "cicd-demo-ff985.appspot.com"
+    "project_number": "760833460039",
+    "project_id": "cicd-demo-370312",
+    "storage_bucket": "cicd-demo-370312.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:269966259407:android:2f3838a98e2c0b2609f3ba",
+        "mobilesdk_app_id": "1:760833460039:android:745262bc42a882af452e62",
         "android_client_info": {
           "package_name": "com.cicddemo.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "269966259407-gvp7s7riskoeosljt42jd4abk99n5g0v.apps.googleusercontent.com",
+          "client_id": "760833460039-dve8ra1q5dmrdrv1an8e614kqfsjkhf5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAv929qyFYPEgN-2ktwyOV2D3ZB9OiEE2k"
+          "current_key": "AIzaSyCyaFp-pSzKdRb0GGn5E9lryZ0umyc817M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "269966259407-gvp7s7riskoeosljt42jd4abk99n5g0v.apps.googleusercontent.com",
+              "client_id": "760833460039-dve8ra1q5dmrdrv1an8e614kqfsjkhf5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
